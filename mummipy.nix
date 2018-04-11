@@ -1,13 +1,14 @@
 {stdenv, fetchFromGitHub, python3}:
   stdenv.mkDerivation {
-    name = "qlite";
+    name = "mummipy";
     buildPhase = ''
       # nothing
     '';
 
     installPhase = ''
       mkdir -p $out/bin
-      cp $src/qlite $out/bin
+      cp $src/mummipy $out/bin
+      cp $src/unmummipy $out/bin
     '';
 
     nativeBuildInputs = [
@@ -16,8 +17,8 @@
 
     src = fetchFromGitHub {
       owner = "andrewchambers";
-      repo = "qlite";
-      rev = "beaf694af22a534dd9169e22f5099324d030cd0a";
-      sha256 = "0m9p8gi1xbllbchyj0kzj5sd4hzvzbj6z7g1dx6824s0yv7d9qn4";
+      repo = "mummipy";
+      rev = "9651d77975106a35a63801f74a0e327014c2d8f1";
+      sha256 = "1bj2bvrqwv9r8736wy72zw5vkqi89hk5lf5hxsmy1mk963lgs89g";
     };
   }
