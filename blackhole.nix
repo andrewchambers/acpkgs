@@ -19,7 +19,7 @@
     src = fetchFromGitHub {
       owner = "andrewchambers";
       repo = "blackhole";
-      rev = "882366a45e1f105a5dfa34032e655ec1e5927daf";
-      sha256 = "0zadphcll6vnm9av103mh0ayj09pq4n0p3ikq36nsp3j5mblmqkv";
+      rev = "b09cd793827f637df7e57851eaaa4c4cf9820c6b";
+      sha256 = "1fkpwwkv3wsk31dhg4kl3di95blfh8d78l2m83spzs40imfknf76";
     };
   }
