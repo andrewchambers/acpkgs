@@ -1,6 +1,6 @@
 {stdenv, fetchFromGitHub, python3}:
   stdenv.mkDerivation {
-    name = "nixpurerebuild";
+    name = "nixospurerebuild";
     buildPhase = ''
       # nothing
     '';
